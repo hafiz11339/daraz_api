@@ -6,7 +6,7 @@ from .serializers import ProductSerializer
 # Create your views here.
 
 class MyPageNumberPagination(PageNumberPagination):
-    page_size = 200
+    page_size = 50
     page_query_param = 'p'
 class ProductDetailAPIView(generics.RetrieveAPIView):
     queryset = DarazData.objects.all()
